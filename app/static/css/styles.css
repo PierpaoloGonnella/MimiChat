@@ -1,0 +1,244 @@
+/* Imposta il font principale per tutto il sito */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0d1117;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #e6e6e6; /* Un bianco leggermente più luminoso per migliorare il contrasto */
+}
+
+/* Contenitore principale della chat */
+.chat-container {
+    width: 420px;
+    background-color: #161b22;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #30363d;
+}
+
+/* Header della chat */
+.chat-header {
+    background-color: #21262d;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    border-bottom: 1px solid #30363d;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 0;
+    flex-grow: 1;
+    font-weight: 600;
+    text-align: left; /* Allineato a sinistra */
+    display: flex;
+    align-items: center;
+}
+
+.new-conversation-btn {
+    background-color: #238636;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.new-conversation-btn:hover {
+    background-color: #2ea043;
+}
+
+/* Stile del menu a tendina per vecchie conversazioni */
+.conversation-select {
+    margin-left: 10px;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 6px;
+    background-color: #21262d;
+    color: white;
+    border: 1px solid #30363d;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.conversation-select:hover {
+    border-color: #238636;
+}
+
+.conversation-select option {
+    background-color: #161b22;
+    color: white;
+}
+
+/* Box della chat */
+.chat-box {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto; /* Abilita lo scorrimento verticale */
+    max-height: 400px; /* Limita l'altezza per il contenitore di scorrimento */
+    background-color: #0d1117;
+    color: #c9d1d9;
+    border-bottom: 1px solid #30363d;
+    scrollbar-width: thin; /* Stile della barra di scorrimento */
+    scrollbar-color: #238636 #0d1117; /* Colore della barra di scorrimento */
+}
+
+.chat-box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-box {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    height: calc(100vh - 180px); /* Usa l'altezza dinamica */
+    background-color: #0d1117;
+    color: #c9d1d9;
+    border-bottom: 1px solid #30363d;
+    scrollbar-width: thin;
+    scrollbar-color: #238636 #0d1117;
+}
+
+/* Messaggi nella chat */
+.message {
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.message.user {
+    background-color: #238636;
+    color: white;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.message.bot {
+    background-color: #161b22;
+    color: white;
+    align-self: flex-start;
+    text-align: left;
+}
+
+/* Contenitore per l'input e il pulsante */
+.input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #21262d;
+    border-top: 1px solid #30363d;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    background-color: #161b22;
+    color: white;
+    margin-right: 10px;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Aggiunta di transizioni */
+}
+
+#user-input:focus {
+    border-color: #238636;
+    background-color: #1b1e22;
+}
+
+
+#user-input:focus {
+    border-color: #238636;
+}
+
+#send-btn {
+    padding: 10px 15px;
+    background-color: #238636;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#send-btn:hover {
+    background-color: #2ea043;
+}
+
+/* Caricamento file */
+.upload-container {
+    padding: 10px;
+    background-color: #161b22;
+    text-align: center;
+    border-top: 1px solid #30363d;
+}
+
+input[type="file"] {
+    color: white;
+    background-color: #21262d;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    padding: 5px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #238636;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #2ea043;
+}
+
+.custom-file-upload {
+    padding: 8px 12px;
+    background-color: #238636;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.custom-file-upload:hover {
+    background-color: #2ea043;
+}
+
+#file-chosen {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #c9d1d9;
+}
+
+@media (max-width: 768px) {
+    .chat-container {
+        width: 95%;
+    }
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mimi Chat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"> <!-- Font Inter -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo">
+            <h2>Mimi Chat</h2>
+            <button onclick="window.location.href='/new_conversation';" class="new-conversation-btn">Start New Conversation</button>
+            
+            <!-- Menu a tendina per vecchie conversazioni -->
+            <select id="conversation-select" class="conversation-select">
+                <option value="" disabled selected>Select a conversation</option>
+                <!-- Le conversazioni saranno aggiunte dinamicamente qui -->
+            </select>
+        </div>
+        <div id="chat-box" class="chat-box">
+            <!-- Carica la cronologia delle conversazioni -->
+            {% for message in conversation_history %}
+                <div class="message {{ message.sender }}">
+                    {{ message.message }}
+                </div>
+            {% endfor %}
+        </div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Type a message..." />
+            <label for="use-rag">Use RAG:</label>
+            <input type="checkbox" id="use-rag" />
+            <button id="send-btn">Send</button>
+        </div>
+        <form id="upload-form">
+            <div class="upload-container">
+                <label for="file-upload" class="custom-file-upload">Choose File</label>
+                <input type="file" id="file-upload" name="file" style="display: none;">
+                <span id="file-chosen">No file chosen</span>
+                <button id="upload-btn" type="submit">Upload</button>
+            </div>
+        </form>
+        
+    </div>
+
+    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>

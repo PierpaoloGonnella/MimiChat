@@ -1,0 +1,178 @@
+{
+    "ls": {
+        "command": "ls",
+        "description": "Mostra il contenuto della directory corrente."
+    },
+    "pwd": {
+        "command": "pwd",
+        "description": "Mostra il percorso completo della directory corrente."
+    },
+    "cd": {
+        "command": "cd",
+        "description": "Cambia la directory corrente."
+    },
+    "cp": {
+        "command": "cp",
+        "description": "Copia file o directory."
+    },
+    "mv": {
+        "command": "mv",
+        "description": "Sposta o rinomina file o directory."
+    },
+    "rm": {
+        "command": "rm",
+        "description": "Rimuove file o directory."
+    },
+    "mkdir": {
+        "command": "mkdir",
+        "description": "Crea una nuova directory."
+    },
+    "rmdir": {
+        "command": "rmdir",
+        "description": "Rimuove una directory vuota."
+    },
+    "touch": {
+        "command": "touch",
+        "description": "Crea un nuovo file vuoto o aggiorna il timestamp di un file esistente."
+    },
+    "chmod": {
+        "command": "chmod",
+        "description": "Modifica i permessi di un file o directory."
+    },
+    "chown": {
+        "command": "chown",
+        "description": "Cambia il proprietario e il gruppo di un file o directory."
+    },
+    "df": {
+        "command": "df",
+        "description": "Mostra l'uso dello spazio su disco delle partizioni montate."
+    },
+    "du": {
+        "command": "du",
+        "description": "Mostra l'uso dello spazio su disco per file e directory."
+    },
+    "top": {
+        "command": "top",
+        "description": "Mostra i processi in esecuzione e l'uso delle risorse in tempo reale."
+    },
+    "ps": {
+        "command": "ps",
+        "description": "Mostra informazioni sui processi in esecuzione."
+    },
+    "kill": {
+        "command": "kill",
+        "description": "Termina un processo specificato."
+    },
+    "ping": {
+        "command": "ping",
+        "description": "Verifica la raggiungibilità di un host in rete."
+    },
+    "wget": {
+        "command": "wget",
+        "description": "Scarica file da un server web."
+    },
+    "curl": {
+        "command": "curl",
+        "description": "Trasferisce dati da o verso un server tramite protocolli come HTTP, FTP, etc."
+    },
+    "nano": {
+        "command": "nano",
+        "description": "Editor di testo a terminale."
+    },
+    "vi": {
+        "command": "vi",
+        "description": "Editor di testo potente, parte della famiglia Vim."
+    },
+    "cat": {
+        "command": "cat",
+        "description": "Mostra il contenuto di un file."
+    },
+    "echo": {
+        "command": "echo",
+        "description": "Stampa il testo sul terminale."
+    },
+    "grep": {
+        "command": "grep",
+        "description": "Cerca un modello all'interno di file."
+    },
+    "find": {
+        "command": "find",
+        "description": "Cerca file e directory all'interno di una gerarchia di directory."
+    },
+    "locate": {
+        "command": "locate",
+        "description": "Trova file in base al loro nome."
+    },
+    "head": {
+        "command": "head",
+        "description": "Mostra le prime righe di un file."
+    },
+    "tail": {
+        "command": "tail",
+        "description": "Mostra le ultime righe di un file."
+    },
+    "free": {
+        "command": "free",
+        "description": "Mostra l'uso della memoria nel sistema."
+    },
+    "uname": {
+        "command": "uname",
+        "description": "Mostra informazioni sul sistema operativo."
+    },
+    "history": {
+        "command": "history",
+        "description": "Mostra la cronologia dei comandi eseguiti nel terminale."
+    },
+    "ifconfig": {
+        "command": "ifconfig",
+        "description": "Mostra o configura le interfacce di rete (deprecated per 'ip')."
+    },
+    "ip": {
+        "command": "ip",
+        "description": "Gestisce il routing, le interfacce di rete e le tabelle di routing."
+    },
+    "man": {
+        "command": "man",
+        "description": "Mostra la pagina di manuale di un comando."
+    },
+    "uptime": {
+        "command": "uptime",
+        "description": "Mostra da quanto tempo il sistema è attivo e il carico medio."
+    },
+    "whoami": {
+        "command": "whoami",
+        "description": "Mostra il nome dell'utente corrente."
+    },
+    "date": {
+        "command": "date",
+        "description": "Mostra o imposta la data e l'ora."
+    },
+    "cal": {
+        "command": "cal",
+        "description": "Mostra il calendario."
+    },
+    "tar": {
+        "command": "tar",
+        "description": "Crea e gestisce archivi compressi."
+    },
+    "zip": {
+        "command": "zip",
+        "description": "Comprimi file in un archivio zip."
+    },
+    "unzip": {
+        "command": "unzip",
+        "description": "Estrai file da un archivio zip."
+    },
+    "ssh": {
+        "command": "ssh",
+        "description": "Connettiti a un host remoto tramite il protocollo SSH."
+    },
+    "scp": {
+        "command": "scp",
+        "description": "Copia file tra sistemi tramite SSH."
+    },
+    "sftp": {
+        "command": "sftp",
+        "description": "Trasferisce file in modo sicuro tramite FTP su SSH."
+    }
+}
